@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    h1 {
-      font-size: 4em;
-      text-shadow: 3px 3px 0px #000000;
-    }
-  </style>
+        h1 {
+            font-size: 4em;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .cursor {
+            animation: cursor 1s infinite;
+        }
+
+        @keyframes cursor {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>lordkno.ws</h1>
+    <h1 id="text"></h1>
+    <span class="cursor">|</span>
+    <script>
+        var text = "lordkno.ws";
+        var i = 0;
+        var speed = 150;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        setTimeout(typeWriter, speed);
+    </script>
 </body>
 </html>
