@@ -1,66 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>lordkno.ws</title>
     <style>
-        @font-face {
-font-family: 'FixedsysExcelsior301Regular';
-src: url('fsex300-webfont.eot');
-src: url('fsex300-webfont.eot?#iefix') format('embedded-opentype'),
-     url('fsex300-webfont.woff') format('woff'),
-     url('fsex300-webfont.ttf') format('truetype'),
-     url('fsex300-webfont.svg#FixedsysExcelsior301Regular') format('svg');
-font-weight: normal;
-font-style: normal;
--webkit-font-smoothing:aliased;
-font-smooth:never;
-}
-        body {
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        h1 {
-            font-size: 4em;
-            overflow: hidden;
-            white-space: nowrap;
-            font-family: 'fixedsys';
-        }
-        .cursor {
-            animation: cursor 1s infinite;
-        }
-
-        @keyframes cursor {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
+      body {
+        background-color: white;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      img {
+        height: 100%;
+      }
     </style>
-</head>
-<body>
-    <h1 id="text"></h1>
-    <span class="cursor">|</span>
-    <script>
-        var text = "lordkno.ws";
-        var i = 0;
-        var speed = 150;
-
-        function typeWriter() {
-            if (i < text.length) {
-                document.getElementById("text").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        setTimeout(typeWriter, speed);
-    </script>
-</body>
+  </head>
+  <body>
+    <img src="https://nostr.build/i/3758.gif" alt="animated image">
+  </body>
 </html>
