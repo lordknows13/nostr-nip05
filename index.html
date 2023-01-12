@@ -2,6 +2,10 @@
 <html>
 <head>
     <style>
+        @font-face {
+          font-family: 'fixedsys';
+          src: url('fixedsys.ttf') format('truetype');
+        }
         body {
             background-color: white;
             display: flex;
@@ -9,13 +13,12 @@
             justify-content: center;
             height: 100vh;
         }
-
         h1 {
             font-size: 4em;
             overflow: hidden;
             white-space: nowrap;
+            font-family: 'fixedsys';
         }
-
         .cursor {
             animation: cursor 1s infinite;
         }
