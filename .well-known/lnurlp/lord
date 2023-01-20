@@ -1,1 +1,14 @@
 
+{
+  "status":"OK",
+  "tag":"payRequest",
+  "commentAllowed":255,
+  "callback":"https://getalby.com/lnurlp/lord/callback",
+  "metadata":"[[\"text/identifier\", \"lord@getalby.com\"], [\"text/plain\", \"Sats for lord\"]]",
+  "minSendable":1000,"maxSendable":11000000000,
+  "payerData":
+    {
+      "name":{"mandatory":false},
+      "email":{"mandatory":false}
+    }
+}
